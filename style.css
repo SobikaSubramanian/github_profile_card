@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 5%;
+}
+
+.search{
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.search input{
+    width: 80%;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -7px 7px 5px rgb(140, 0, 255, 0.5);
+    border: 1px solid rgb(140, 0, 255, 0.5);
+    outline: none;
+    color: white;
+    margin-left: 5%;
+}
+
+.search input::placeholder{
+    color: gray;
+    /* padding-left: 10px; */
+}
+
+.search input:focus{
+    box-shadow: -7px 7px 5px blueviolet;
+    border: 1px solid blueviolet;
+    padding: 10px;
+}
+
+.search .hit_search{
+    width: 10%;
+    font-size: 18px;
+    border-radius: 10px 0 10px;
+    border: 1px solid rgb(140, 0, 255, 0.5);
+    box-shadow: 4px 4px 5px rgb(140, 0, 255, 0.5);
+    color: rgba(255, 255, 255, 0.864);
+    margin-left: 10px;
+}
+
+.search .hit_search:hover{
+    cursor: pointer;
+    box-shadow: -4px 4px 5px blueviolet;
+    border: 1px solid blueviolet;
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.image{
+    width: 50%;
+}
+
+.fluid {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 5px rgb(140, 0, 255, 0.5);
+    position: relative;
+    margin: 5px;
+    margin-left: 40%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.content{
+    width: 50%;
+}
+
+h5{
+    width: 90%;
+    text-align: left;
+    font-size: 3rem;
+    margin-top: 10%;
+}
+
+#bio{
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 2%;
+}
+
+.cards{
+    display: flex;
+    background-color: blueviolet;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.num{
+    margin-right: 5px;
+    background-color: blueviolet;
+}
+
+span{
+    background-color: blueviolet;
+}
+
+
+
+
+/* media  */
+
+@media screen and (max-width: 600px) {
+    .search input{
+        font-size: 12px;
+        height: 30px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .search .hit_search{
+        font-size: 10px;
+    }
+
+    .container{
+        display: block;
+    }
+    .fluid{
+        height: 300px;
+        width: 300px;
+    }
+
+    .content{
+        margin-left: 20%;
+    }
+    .content h5{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #bio{
+        text-align: center;
+        align-items: center;
+    }
+
+    .cards{
+        font-size: 12px;
+    }
+
+  }

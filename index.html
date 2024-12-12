@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Cards!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h2>Github Profile Card!😄</h2>
+
+    <div class="search">
+        <input type="text" id="user_search" class="text_box" placeholder="Enter name to search your github card!">
+        <button type="button" id = "hit" class="hit_search" onclick="githubSearch();">Search</button>
+    </div>
+
+    <div class="container">
+        <div class="image">
+            <div class="fluid">
+                <img alt="" id ='user_image' width="100%" height="100%" src="./hi.jpg">
+            </div>
+        </div>
+
+        <div class="content">
+            <h5 id="user_name"></h5>
+            <p id = "bio">Hello!</p>
+
+            <div class="buttons">
+                <!-- followers, following, reposititory -->
+                 <div class="cards">
+                    <p id="following" class="num">0</p>
+                    <span> Following</span>
+                 </div>
+                 <div class="cards">
+                    <p id="followers" class="num">0</p>
+                    <span>Followers</span>
+                 </div>
+                 <div class="cards">
+                    <p id="repo" class="num">0</p>
+                    <span>Repo</span>
+                 </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
